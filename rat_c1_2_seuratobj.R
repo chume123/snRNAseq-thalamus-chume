@@ -17,3 +17,6 @@ expression.matrix <- ReadMtx(
 )
 
 seurat_object <-CreateSeuratObject(counts = expression.matrix)
+
+setwd("X:/Chudasama49/Cordelia/Single Cell/snseqrat")
+saveRDS(seurat_object, file = "rat_c1_2_seuratobj")
